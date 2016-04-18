@@ -8,8 +8,6 @@
  *
  * Banner shortcode
  *
-*/
-/**
  *	e107 Banner management plugin
  *
  *	Handles the display and sequencing of banners on web pages, including counting impressions
@@ -19,15 +17,11 @@
  */
 class banner_shortcodes extends e_shortcode
 {
-	
-	
-		
+
 // $parm now can be array, old campaign $parm still allowed....
 	function sc_banner($parm='')
 	{
 
-    var_dump($parm);
-		
 		$sql = e107::getDb();
 		$tp = e107::getParser();
 		mt_srand ((double) microtime() * 1000000);
