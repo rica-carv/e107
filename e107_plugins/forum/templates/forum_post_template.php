@@ -14,20 +14,20 @@ if (!defined('e107_INIT')) { exit; }
 
 //$FORUM_POST_TEMPLATE['caption']		= "Custom caption";
 
-$SC_WRAPPER['FORUM_POST_AUTHOR'] = "<div class='form-group'>
+$FORUM_POST_WRAPPER['FORUM_POST_AUTHOR'] = "<div class='form-group'>
 										<label for='name' class='col-sm-3 control-label'>".LAN_FORUM_3010."</label>
 										 <div class='col-sm-9'>{---}</div>
 									</div>
 ";
-$SC_WRAPPER['FORUM_POST_SUBJECT'] = "<div class='form-group'>
+$FORUM_POST_WRAPPER['FORUM_POST_SUBJECT'] = "<div class='form-group'>
 										<label for='name' class='col-sm-3 control-label'>".LAN_FORUM_3011."</label>
 										 <div class='col-sm-9'>{---}</div>
 									</div>
 ";
 
 // Replaces legacy? {FORUM_POST_OPTIONS_LABEL} shortcode...
-$SC_WRAPPER['FORUM_POST_OPTIONS'] = "<div class='form-group'>
-										<label for='name' class='col-sm-3 control-label'>".LAN_FORUM_8013."</label>
+$FORUM_POST_WRAPPER['FORUM_POST_OPTIONS'] = "<div class='form-group'>
+										<label for='name' class='col-sm-3 control-label'>{FORUM_POST_OPTIONS_LABEL}</label>
 										 <div class='col-sm-9'>{---}</div>
 									</div>
 ";
